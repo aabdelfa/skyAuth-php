@@ -19,7 +19,6 @@
 * Techledge | SkySparkAuth Class
 *
 * Conducts SCRAM Authentication for SS3.
-* Conducts all function/filter calls to SS3
 *****************************************************/
 
 //using .env plugin with composer, that's why I'm using this autoload file
