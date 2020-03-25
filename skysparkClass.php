@@ -56,7 +56,7 @@ class SkySpark {
 		$dklen = 32; 
 
 		//SCRAM Autherntication Parameters
-		$serverUrl = 'https://skyspark.sentientsite.com:8443/ui';
+		$serverUrl = 'https://skyspark.urlProjName.com/ui';
 
 		//Send url and username for first introduction in message 1
 		$handshakeToken = $this->sendMsg1($serverUrl, $this->username);
@@ -119,7 +119,6 @@ class SkySpark {
 		curl_setopt($ch, CURLOPT_URL, $serverUrl);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_HEADER  , true);
-		curl_setopt($ch, CURLOPT_CAINFO  , $_SERVER['DOCUMENT_ROOT'].'/sentient_site.crt');
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		    "Authorization: ". $authMsg,
 		    "WWW-Authenticate: SCRAM"
@@ -142,7 +141,6 @@ class SkySpark {
 		curl_setopt($ch, CURLOPT_URL, $serverUrl);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_HEADER  , true);
-		curl_setopt($ch, CURLOPT_CAINFO  , $_SERVER['DOCUMENT_ROOT'].'/sentient_site.crt');
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		    "Authorization: ". $authMsg,
 		    "WWW-Authenticate: SCRAM"
@@ -168,7 +166,6 @@ class SkySpark {
 		curl_setopt($ch, CURLOPT_URL, $serverUrl);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_HEADER  , true);
-		curl_setopt($ch, CURLOPT_CAINFO  , $_SERVER['DOCUMENT_ROOT'].'/sentient_site.crt');
 		curl_setopt($ch, CURLOPT_FAILONERROR, false);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		    "Authorization: " .$authMsg
