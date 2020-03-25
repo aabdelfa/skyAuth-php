@@ -2,12 +2,12 @@
 
 /*****************************************************
 * Author: Alaa E. Abdelfattah
-* Company: Sentient Buildings, LLC.
-* Year: 2017
+* Company: Techledge, LLC.
+* Year: 2019
 *
 ******************************************************
 *
-* COPYRIGHT 2017 - Sentient Buildings, LLC
+* COPYRIGHT 2019 - Techledge, LLC
 *
 * This file is copyrighted and all rights
 * are reserved by the author. This
@@ -16,7 +16,7 @@
 * author.
 *
 ******************************************************
-* Sentient Buildings | SkySparkAuth Class
+* Techledge | SkySparkAuth Class
 *
 * Conducts SCRAM Authentication for SS3.
 * Conducts all function/filter calls to SS3
